@@ -7,7 +7,7 @@ const computerPlay = (game_values) => {
 const validateInput = (game_values) => {
     let playerSelection = ''
     do {
-        playerSelection = prompt('Type your selected value', '').toLowerCase().trim() 
+        playerSelection = prompt('Type rock, paper or scissors to play', '').toLowerCase().trim() 
     } while (!game_values.includes(playerSelection));
     return playerSelection
 }
@@ -27,7 +27,7 @@ const singleRound = (player, computer) => {
 const game = () => {
     const game_values = ['rock', 'paper', 'scissors']
 
-    console.log("Let's play rock, paper and scissors");
+    console.log("Let's play rock, paper or scissors");
 
     let playerWins = 0
     let computerWins = 0
